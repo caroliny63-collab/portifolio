@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="Portfólio de Isabela M. Costa - Desenvolvedora Front-end e UI Criativa. Projetos modernos e responsivos.">
+    <title>Isabela M. Costa | Front-end & UI Criativa</title>
+    <!-- Google Fonts + Font Awesome -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo"><span>Portifolio</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="#sobre" class="nav-link">Sobre mim</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO SOBRE MIM com FOTO DE PERFIL -->
+        <section id="sobre" class="section sobre-section">
+            <div class="container">
+                <div class="sobre-grid">
+                    <div class="sobre-conteudo">
+                        <div class="badge">Olá, eu sou</div>
+                        <h1>Caroliny</h1>
+                        <h2 class="typing-destaque" id="dynamicRole">Front-end</h2>
+                        <p>Olá meu nome é Caroliny! tenho 30 anos, sou estudante do curso TECNOLOGIA EM SISTEMAS PARA
+                            INTERNET (EAD-UAPI) polo Nazaré do Piauí
+                        </p>
+                        <div class="skills">
+                            <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+                         </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://wa.me/558994307736" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                            
+                            <a href="#" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="sobre-avatar">
+                        <div class="avatar-circle">
+                            <img src="perfil.jpeg"
+                                alt="I">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PROJETOS com cards modernos -->
+        <section id="projetos" class="section projetos-section">
+            <div class="container">
+                <div class="section-header">
+                    
+                    <h2>Meus projetos</h2>
+                    <p>Ideias em andamento</p>
+                </div>
+                <div class="projetos-grid">
+                    <!-- Projeto 1:-->
+
+
+                    <div class="projeto-card">
+                        <div class="project-img">
+                            <img src="projt.jpeg" alt="TravelVibes - plataforma de viagens" loading="lazy">
+                        </div>
+                        <h3>Em TESTE</h3>
+                        <p>projeto em andamento</p>
+                        <div class="tech-stack">
+                            <span>sem codigo</span> <span>sem codigo</span> 
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/caroliny63-collab/portifolio" class="link-icon"><i class="fab fa-github"></i> abrir Código</a>
+                            <a href="https://github.com/caroliny63-collab/portifolio" class="link-icon"><i class="fas fa-external-link-alt"></i>em andamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO com design renovado -->
+        <section id="contato" class="section contato-section">
+            <div class="container">
+                <div class="section-header light-header">
+                    <span class="section-tag">Vamos conversar</span>
+                    <h2>Entre em contato</h2>
+                    <p>Ficarei feliz em saber sua ideia, dúvida ou oportunidade.</p>
+                </div>
+                <div class="contato-wrapper">
+                    <div class="contato-info">
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Nazaré do Piauí</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>E-mail profissional</h4>
+                                <p>caroliny63@hotmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+55 89 9430-7736</p>
+                            </div>
+                        </div>
+                        <div class="redes-mini">
+                            <p>Redes sociais:</p>
+                            <div class="social-mini-icons">
+                                <a href="https://github.com/caroliny63-collab/portifolio" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://wa.me/558994307736" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="contactForm" class="contato-form">
+                        <div class="form-group">
+                            <label for="name">Nome completo</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem aqui..."
+                                required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-enviar">Enviar mensagem <i
+                                class="fas fa-paper-plane"></i></button>
+                        <div id="formFeedback" class="form-feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Caroliny Todos os direitos reservados</p>
+            <p class="footer-credits"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
